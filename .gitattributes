@@ -1,0 +1,14 @@
+# 统一换行符策略
+#
+# 仓库内与工作区一律使用 LF，避免 Windows(CRLF) 与 Unix(LF) 混用带来的
+# 整文件 diff、以及 "LF will be replaced by CRLF" 之类的提示。
+* text=auto eol=lf
+
+# 显式声明二进制文件，防止被当作文本做换行符转换而损坏
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.pdf  binary
+*.zip  binary
